@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #81ecec;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2d3436;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-color: rgb(171, 170, 170);
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-size: 2rem;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #6c5ce7;
+        }
+        .book-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .book {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .book h3 {
+            font-size: 1.2rem;
+            margin: 10px 0 5px;
+        }
+        footer {
+            background-color: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Bienvenido a la Biblioteca Virtual
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Catálogo</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <div class="hero">
+        Explora el conocimiento a tu alcance
+    </div>
+    <div class="content">
+        <h2>Libros Populares</h2>
+        <div class="book-list">
+            <div class="book">
+                <h3>El Principito</h3>
+                <p>Autor: Antoine de Saint-Exupéry</p>
+            </div>
+            <div class="book">
+                <h3>Cien Años de Soledad</h3>
+                <p>Autor: Gabriel García Márquez</p>
+            </div>
+            <div class="book">
+                <h3>Don Quijote de la Mancha</h3>
+                <p>Autor: Miguel de Cervantes</p>
+            </div>
+            <div class="book">
+                <h3>Orgullo y Prejuicio</h3>
+                <p>Autor: Jane Austen</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Biblioteca Virtual. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
